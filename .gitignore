@@ -5,3 +5,5 @@ build/
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
+/samples/credentials.pyc
+/samples/credentials.py
