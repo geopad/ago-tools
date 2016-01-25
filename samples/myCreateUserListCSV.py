@@ -30,7 +30,7 @@ for role in roles:
     
 # Designate output file for CSV user list.
 # TODO: Check that directory exists, and that file name isn't already in use.
-outputFile = u'c:/temp/' + agolSubdomain + time.strftime("%Y-%m-%d-%H%M%S",time.gmtime()) + u'.csv'
+outputFile = u'c:/temp/' + agolSubdomain + u' ' + time.strftime("%Y-%m-%d-%H%M%S",time.gmtime()) + u'.csv'
 with open(outputFile, 'wb') as output:
     
     dataWriter = csv.writer(output, dialect='excel' )
