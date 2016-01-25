@@ -1,6 +1,8 @@
 # Requires credentials with admin role on AGOL instance.
 # Supply credentials in separate file outside of source control: ./credentials.py
 
+# TODO: Check that tags and groups aren't dropping the first/last one...
+
 import csv
 import sys
 import time
