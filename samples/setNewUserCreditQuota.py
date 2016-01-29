@@ -33,7 +33,7 @@ for user in users:
         if user[u'assignedCredits'] = -1:
             # Set credit quota
             print u'Setting creit quota for' + user[u'username']
-            
+            # TODO: actually set the quota...
             
     else:
         print user[u'username'] + u'has no assignedCredits value!'
