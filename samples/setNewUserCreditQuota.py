@@ -34,5 +34,6 @@ for user in users:
             # Set credit quota
             print u'Setting creit quota for' + user[u'username']
             
+            
     else:
         print user[u'username'] + u'has no assignedCredits value!'
