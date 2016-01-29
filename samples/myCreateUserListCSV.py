@@ -76,6 +76,7 @@ with open(outputFile, 'wb') as output:
         else: storageQuota = u''
         if u'storageUsage' in user: storageUsage = str(user[u'storageUsage']).encode('utf-8')
         else: storageUsage = u''
+        # assignedCredits = -1 indicates no quota
         if u'assignedCredits' in user: assignedCredits = str(user[u'assignedCredits']).encode('utf-8')
         else: assignedCredits = u''
         if u'culture' in user:
