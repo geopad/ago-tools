@@ -92,7 +92,9 @@ with open(outputFile, 'wb') as output:
             #get role name from the id, using role dictionary set above. If it's not in the roles, it's one of the standard roles so just use it.
             roleID = user[u'role']
             roleName = roleLookup.get(roleID,roleID)
-        else: roleName = u''
+        else:
+            roleID = u''
+            roleName = u''
         if u'provider' in user: provider=user[u'provider'].encode('utf-8')
         else: provider = u''
         if u'units' in user: units=user[u'units'].encode('utf-8')
