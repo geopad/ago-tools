@@ -1,6 +1,8 @@
 # Requires credentials with admin role on AGOL instance.
 # Supply credentials in separate file outside of source control: ./credentials.py
 
+# TODO: Check that tags and groups aren't dropping the first/last one...
+
 import csv
 import sys
 import time
@@ -33,7 +35,7 @@ for user in users:
         if user[u'assignedCredits'] = -1:
             # Set credit quota
             print u'Setting creit quota for' + user[u'username']
-            # TODO: actually set the quota...
+            # TODO: Set the actual quota...
             
     else:
         print user[u'username'] + u'has no assignedCredits value!'
